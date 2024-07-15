@@ -1,0 +1,31 @@
+@keyframes buttonHover {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 2s ease-in;
+  }
+  
+  .button-hover {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .button-hover:hover {
+    animation: buttonHover 0.6s ease-in-out;
+    transform: scale(1.05);
+  }
+  

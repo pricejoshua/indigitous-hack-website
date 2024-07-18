@@ -7,8 +7,7 @@ type TimeLeft = {
     seconds: number
 }
 const Countdown: React.FC = () => {
-    const startDate = new Date('2024-11-08T17:00:00-0600');
-    const [timeLeft, setTimeLeft] = useState<TimeLeft>({
+   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
         days: 0,
         hours: 0,
         minutes: 0,
@@ -16,6 +15,7 @@ const Countdown: React.FC = () => {
     });
 
     useEffect(() => {
+        const startDate = new Date('2024-11-08T17:00:00-0600');
         const timer = setInterval(() => {
             const difference = +startDate - +new Date();
             let newTimeLeft: TimeLeft = {
@@ -38,7 +38,7 @@ const Countdown: React.FC = () => {
         }, 400);
 
         return () => clearInterval(timer);
-    }, [startDate]);
+    }, []);
 
     return (
         <section className="text-white p-10 text-center">

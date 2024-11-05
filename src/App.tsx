@@ -1,5 +1,4 @@
 import './App.css';
-import Main from './components/Main';
 import MainPage from './pages/MainPage';
 import Resources from './pages/Resources';
 

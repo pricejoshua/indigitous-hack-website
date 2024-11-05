@@ -13,6 +13,7 @@ interface Link {
 // categories and links data
 const data = {
   digitalMissions: [
+    { name: '#HACK2024 Ideas', url: 'https://hack24.ideanote.io/home'},
     { name: 'faith.tools', url: 'https://faith.tools/' },
     { name: 'indigitous', url: 'https://indigitous.org/' },
     { name: 'renew outreach', url: 'https://renewoutreach.org/' },

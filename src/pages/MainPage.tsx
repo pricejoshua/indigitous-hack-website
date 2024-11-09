@@ -1,4 +1,3 @@
-import Main from '../components/Main';
 import About from '../components/About';
 import Signup from '../components/Signup';
 import Sponsors from '../components/Sponsors';

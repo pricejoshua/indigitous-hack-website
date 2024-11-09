@@ -1,7 +1,7 @@
 import './App.css';
 import MainPage from './pages/MainPage';
 import Resources from './pages/Resources';
-
+import Main from './components/Main';
 function App() {
 
   const startDate = new Date('2024-11-08T17:00:00-0600');
